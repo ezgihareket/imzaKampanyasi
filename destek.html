@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destek</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+
+<body>
+
+    <div>
+
+        <div style="margin-top: 60px;">
+            <h1 style="color: green; text-align: center; margin-top: 100px;">&#x2714; İmzalandı</h1>
+            <hr style="position: relative; top: 16px;">
+            <hr style="background-color: green; margin-left: 400px; margin-right: 400px;" size="6;">
+        </div>
+
+    </div>
+
+    <div class="card text-center">
+        <div class="card-header">
+            TEŞEKKÜRLER
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">İmza Kaydedildi</h5>
+            <p class="card-text">Kampanyamıza Destekleriniz için Teşekkürler.</p>
+            <a href="/C:/Users/ezgih/VSCodeProject/imzauygulama/icerik.html" class="btn btn-primary" id="results">Geri Git</a>
+        </div>
+        <div class="card-footer text-muted">
+            <div class="row">
+                
+                <div>
+                    <script language="JavaScript">
+                        var now = new Date(); var yr = now.getYear(); var mName = now.getMonth() + 1; var dName = now.getDay() + 1;
+                        var yr_str = " 19"; // yil 2000 iken, 19 sayisinin çıkmamasini saglayacak string 
+                        var dayNr = ((now.getDate() < 10) ? "" : "") + now.getDate(); if (dName == 1) Day = "Pazar"; if (dName == 2) Day = "Pazartesi"; if (dName == 3) Day = "Salı"; if (dName == 4) Day = "Çarşamba"; if (dName == 5) Day = "Perşembe"; if (dName == 6) Day = "Cuma"; if (dName == 7) Day = "Cumartesi"; if (mName == 1) Month = "Ocak"; if (mName == 2) Month = "Şubat"; if (mName == 3) Month = "Mart";
+                        if (mName == 4) Month = "Nisan"; if (mName == 5) Month = "Mayıs"; if (mName == 6) Month = "Haziran"; if (mName == 7) Month = "Temmuz"; if (mName == 8) Month = "Ağustos"; if (mName == 9) Month = "Eylül";
+                        if (mName == 10) Month = "Ekim"; if (mName == 11) Month = "Kasım"; if (mName == 12) Month = "Aralık";
+                        if (yr > 99) {
+                            yr_str = " ";
+                            if (yr < 2000) yr += 1900;
+                        } var todaysDate = (" " + dayNr + " " + Month + yr_str + yr + "" + ", " + Day + ""); document.open(); document.write("<FONT face=arial SIZE=4 color=black>" + todaysDate + "</FONT>");// --> 
+                    </script>
+                </div>
+                <div>
+                    <small><i>Kampanyanın imzalandığı tarih </i></small>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+
+
+
+
+    <script>
+        const resultList = document.getElementById('results')
+        new URLSearchParams(window.location.search).forEach((value, name) => {
+            
+            resultList.append(document.createElement('br'))
+        })
+    </script>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+
+</html>
